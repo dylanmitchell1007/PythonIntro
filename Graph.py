@@ -1,30 +1,26 @@
-def func:
-    '''Functions'''
+from Node import Node
+class Graph:
+    graph = []
+    
+    #def getneighbors(node,graph):
+       
 
-if _name_ == "_main_"
-'''This is a way to create a simple class'''
-class Zombie(object):
-def __init__(self, hp, attack)
-self.health = hp
-self.attack = attack
-
-def attack(self, ninja):
-    ninja.takedamage(5)
-
-class Ninja(object):
-def __init__(self, hp, attack)
-self.health = hp
-self.attack = attack
-
-class Node(object)
-def __init__(self, value, id):
-    self.id = identifier
-    self.value = value
-
-class graph(object)
-def __init__(self, nodes):
-self.nodes = nodes
-def get_node(self, node):
-    '''get a node by an id'''
-    if node in self.nodes[identifier]
-        return node
+    def getnode(self, id, g):
+        for node in g.graph:
+            if id is node.id:
+                return node
+    def __init__(self, XBounds, YBounds):
+        X = 0
+        Y = 0
+        for i in range(0, (XBounds * YBounds)):
+            node = Node(i+1)
+            node.setPos(0,0)
+            self.graph.append(node)
+        for node in self.graph:
+            node.setPos(X, Y)
+            X += 1
+            if X == XBounds:
+                X = 0
+                Y += 1
+            
+ 
